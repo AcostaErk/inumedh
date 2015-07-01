@@ -215,8 +215,8 @@ rObj = function (evt) {
       <div class="mainmenu">
         <div id="mainmenu">
           <ul class="sf-menu">
-            <li><a href="index.html"><span class="home"><img src="images/home.png" alt="" /></span>Inicio</a></li>
-            <li><a href="nosotros.html" id="visited"><span class="home"><img src="images/about.png" alt="" /></span>Nosotros</a></li>
+            <li><a href="index.html"  id="visited"><span class="home"><img src="images/home.png" alt="" /></span>Inicio</a></li>
+            <li><a href="nosotros.html"><span class="home"><img src="images/about.png" alt="" /></span>Nosotros</a></li>
             <li><a href="aspirantes.html"><span class="home"><img src="images/portfolio.png" alt="" /></span>Aspirantes</a>
               <ul>
                 <li><a href="#.html">Opcion1 Aspirantes</a></li>
@@ -264,7 +264,22 @@ rObj = function (evt) {
       <article>
         	<div id="cuerpo">
                 <div id="contenido">
-                    	<?php 
+                <div id="lateral">
+                        <ul>
+                        	<li><a href="detalle.php">Mi cuenta</a></li>
+                            <li><a href="capNoticia.php">Crear Noticia</a></li>
+                            <?php
+							if($admin==1){
+                            echo "<li><a href='catNoticias.php'>Catálogo de Noticias</a></li>";
+                            echo "<li><a href='creaUsr.php'>Crear Usuario</a></li>";
+                            echo "<li><a href='catUsr.php'>Catálogo de Usuario</a></li>";
+							}
+							?>
+                            <li><a href="salir.php">Salir</a></li>
+                        </ul>
+            	 </div>
+                
+               	  <?php 
 				if (isset($_POST['submit'])) { 
 				   //Crearemos el Articulo
 				
@@ -427,20 +442,7 @@ rObj = function (evt) {
                   
               </form> 
                 </div>
-                <div id="lateral">
-                        <ul>
-                        	<li><a href="detalle.php">Mi cuenta</a></li>
-                            <li><a href="capNoticia.php">Crear Noticia</a></li>
-                            <?php
-							if($admin==1){
-                            echo "<li><a href='catNoticias.php'>Catálogo de Noticias</a></li>";
-                            echo "<li><a href='creaUsr.php'>Crear Usuario</a></li>";
-                            echo "<li><a href='catUsr.php'>Catálogo de Usuario</a></li>";
-							}
-							?>
-                            <li><a href="salir.php">Salir</a></li>
-                        </ul>
-            	 </div>
+                
         </div>
 	</article>
       
@@ -451,28 +453,6 @@ rObj = function (evt) {
 <!-- econtainer ends here --> 
 <!-- About Content Part - Box Two ==================================================
 ================================================== -->
-<div class="container">
-  <div class="sepContainer1"></div>
-  <!-- Toggle -->
-  <h2>Oferta Educativa</h2>
-  <div class="toggle-trigger">Medicina General Integral. RVOE: ESLI-1817-117-2012</div>
-  <div class="toggle-container">
-    <p>
-    	Vision de la Carrera MGI
-
-        </p>
-  </div>
-  <div class="toggle-trigger">Maestría en Gerontología. RVOE: ESM-1817-055-2012</div>
-  <div class="toggle-container">
-    <p>Visión de la Maestria en Gerontología </p>
-  </div>
-  <div class="toggle-trigger">TSU en Optometría y Óptica. RVOE: ESTSU-1817-002-2012</div>
-  <div class="toggle-container">
-    <p>Vision de la Carreta TSU. </p>
-  </div>
-  
-  <!-- ENDS Toggle --> 
-</div>
 <div class="blankSeparator1"></div>
 
 <!--Footer ==================================================

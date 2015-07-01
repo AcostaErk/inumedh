@@ -68,7 +68,14 @@ div.blankSeparator2 {
 #header {
 	background:#bfd6e4;
 	margin-top:0px;
-	border-bottom:1px solid #6d8696;
+	border-bottom:1px solid #ec008c;
+	background-color: #48a9e4;
+  background-image: -moz-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-image: -ms-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-image: -o-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0779bf), color-stop(1, #48a9e4));
+  background-image: -webkit-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-image: linear-gradient(top, #0779bf 0%, #48a9e4 100%);
 }
 .logo {
 	float: left;
@@ -147,7 +154,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li:hover { /* visited pseudo selector so IE6 applies text colour*/
 	background: rgba(215, 234, 238, 0.3);
-	border-top:2px solid #fff;
+	border-top:2px solid #8dc73f;
 }
 .sf-menu li a {
 	font-family: Arial, Helvetica, sans-serif;
@@ -156,7 +163,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 	text-decoration:none;
 	text-transform:uppercase;
 	font-weight:600;
-	color: #414558;
+	color: #FFF;
 }
 li a#visited {
 	background: rgba(215, 234, 238, 0.3);
@@ -238,8 +245,8 @@ span.home {
 	margin: 0px 0 0 0;
 	padding: 0;
 	background:#fff;
-	border-top:1px solid #efefef;
-	border-bottom:5px solid #89a2b2;
+	border-top:1px solid #ec008c;
+	border-bottom:5px solid #8dc73f;
 }
 .flexslider .slides > li {
 	display: none;
